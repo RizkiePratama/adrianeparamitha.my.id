@@ -1,0 +1,38 @@
+
+.navbar-brand, .nav-item {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar {
+    padding-left: 2rem!important;
+    padding-right: 2rem!important;
+}
+
+.navbar-brand {
+    font-size: 78px!important;
+}
+
+.nav-item {
+    font-size: 1.5rem!important;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.gallery a {
+    display: block;
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#photo-grid-container {
+    overflow: hidden!important;
+}

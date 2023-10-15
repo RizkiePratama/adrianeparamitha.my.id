@@ -1,0 +1,20 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: gallery-page
+title: Product Photography
+---
+
+<script>
+    const imgs = [
+        'assets/images/products/YGA08589.png',
+        'assets/images/products/YGA08591.png',
+        'assets/images/products/YGA08594.png',
+        'assets/images/products/YGA08599.png',
+        'assets/images/products/YGA08604.png',
+        'assets/images/products/YGA08604.png',
+    ];
+    const element = document.querySelector('#photo-grid-container');
+    const photoGrid = new PhotoGridBox(element, imgs);
+</script>
