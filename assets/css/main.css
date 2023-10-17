@@ -1,6 +1,6 @@
 
-.navbar-brand, .nav-item {
-    font-family: 'Bebas Neue', sans-serif;
+.navbar-brand, .nav-item, .hero-title, .hero-sub {
+    font-family: 'Bebas Neue';
     text-transform: uppercase;
 }
 
@@ -35,4 +35,59 @@
 
 #photo-grid-container {
     overflow: hidden!important;
+}
+
+.hero-title, .hero-sub {
+    text-align: center;
+    color: #FAFAFA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    font-size: 10vw;
+}
+
+.hero-sub {
+    margin-top: -2.5vw;
+}
+
+.hero-sub h2 {
+    font-size: 4vw;
+}
+
+.hero-container {
+    padding-top: 20vh;
+    height: 90vh;
+    background-color: #252525DA;
+}
+#landing {
+    background-image: url("/assets/images/IMG_3815-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#landing .navbar {
+    padding-top: 3rem;
+    background-color: #252525DA;
+}
+
+#landing .navbar .nav-link {
+    color: #FAFAFA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none!important;
+    box-shadow: none!important;
+    border: 0!important;
+    padding: 0!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 38px!important;
+    }
 }
