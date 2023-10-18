@@ -90,4 +90,9 @@
     .navbar-brand {
         font-size: 38px!important;
     }
+
+    .navbar {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
 }
