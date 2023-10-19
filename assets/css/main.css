@@ -1,7 +1,19 @@
 
-.navbar-brand, .nav-item, .hero-title, .hero-sub {
+.navbar-brand, .nav-item, .hero-title, .hero-sub, .about-title {
     font-family: 'Bebas Neue';
     text-transform: uppercase;
+}
+
+#about-page, #writing-page {
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel, .carousel-inner {
+    border-radius: 25px;
+}
+
+.about-title {
+    font-size: 4rem;
 }
 
 .navbar {
@@ -57,22 +69,25 @@
 
 .hero-container {
     padding-top: 20vh;
-    height: 90vh;
-    background-color: #252525DA;
+    height: 100vh;
+    background-color: #252525AA;
 }
 #landing {
-    background-image: url("/assets/images/IMG_3815-2.jpg");
+    background-image: url("/assets/images/background.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #landing .navbar {
     padding-top: 3rem;
-    background-color: #252525DA;
+    background-color: #252525AA;
+}
+
+#landing .navbar .nav-link.active {
+    color: #FAFAFA;
 }
 
 #landing .navbar .nav-link {
-    color: #FAFAFA;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -84,6 +99,83 @@
     box-shadow: none!important;
     border: 0!important;
     padding: 0!important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-box {
+    margin-bottom: 5rem;
+}
+
+.social-box ul {
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  
+.social-box li {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 3rem
+}
+
+.fab {
+    color: #252525;
+}
+
+.fab:hover, .nav-link:hover {
+    color: #4d5fff!important;
+}
+
+.profile-pic {
+    width: 70%;
+    margin-bottom: 4rem;
+}
+
+.profile-pic-mobile {
+    width: 70%;
+    display: none;
+    border-radius: 100%;
+    margin: 2rem auto 3rem;
+}
+
+@media screen and (max-width: 992px) {    
+    .profile-pic-mobile {
+        display: block;
+    }
+
+    .profile-pic {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {

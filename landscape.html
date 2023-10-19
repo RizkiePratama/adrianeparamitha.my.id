@@ -1,0 +1,37 @@
+---
+layout: gallery-page
+title: Landscape Photography
+permalink: /landscape
+---
+
+<script>
+    const imgs = [
+        'assets/images/phone/IMG_20210526_200856_010.jpg',
+        'assets/images/phone/IMG_20220629_111556.jpg',
+        'assets/images/phone/IMG_20230221_062255.jpg',
+        'assets/images/phone/PXL_20230403_051301962.jpg',
+        'assets/images/phone/PXL_20230721_080618297.jpg',
+        'assets/images/phone/PXL_20231001_064824196.jpg',
+        'assets/images/phone/IMG_20210526_200858_134.jpg',
+        'assets/images/phone/IMG_20221110_091534.jpg',
+        'assets/images/phone/PXL_20230308_075519238.jpg',
+        'assets/images/phone/PXL_20230423_054820042.jpg',
+        'assets/images/phone/PXL_20230810_025224282.jpg',
+        'assets/images/phone/PXL_20231001_064848185.jpg',
+        'assets/images/phone/IMG_20220629_092038.jpg',
+        'assets/images/phone/IMG_20230129_142517.jpg',
+        'assets/images/phone/PXL_20230319_021719815.jpg',
+        'assets/images/phone/PXL_20230527_032742340.jpg',
+        'assets/images/phone/PXL_20230829_082154185.jpg',
+        'assets/images/phone/PXL_20231001_081608416.jpg',
+        'assets/images/phone/IMG_20220629_111510.jpg',
+        'assets/images/phone/IMG_20230129_163255.jpg',
+        'assets/images/phone/PXL_20230319_023522325.jpg',
+        'assets/images/phone/PXL_20230527_034421016.jpg',
+        'assets/images/phone/PXL_20231001_064128896.jpg',
+    ];
+
+    shuffleImages(imgs);
+    const element = document.querySelector('#photo-grid-container');
+    const photoGrid = new PhotoGridBox(element, imgs);
+</script>

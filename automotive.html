@@ -1,23 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: gallery-page
 title: Auto Photography
+permalink: /automotive
 ---
 
 <script>
     const imgs = [
-        'assets/images/YGA09869.jpg',
-        'assets/images/YGA09928.jpg',
-        'assets/images/YGA09936.jpg',
-        'assets/images/YGA09916.jpg',
-        'assets/images/YGA09945.jpg',
-        'assets/images/YGA09949.jpg',
-        'assets/images/YGA09939.jpg',
-        'assets/images/YGA09961.jpg',
-        'assets/images/YGA09905.jpg',
+        'assets/images/automotive/YGA09869.jpg',
+        'assets/images/automotive/YGA09928.jpg',
+        'assets/images/automotive/YGA09936.jpg',
+        'assets/images/automotive/YGA09916.jpg',
+        'assets/images/automotive/YGA09945.jpg',
+        'assets/images/automotive/YGA09949.jpg',
+        'assets/images/automotive/YGA09939.jpg',
+        'assets/images/automotive/YGA09961.jpg',
+        'assets/images/automotive/YGA09905.jpg',
     ];
+
+    shuffleImages(imgs);
     const element = document.querySelector('#photo-grid-container');
     const photoGrid = new PhotoGridBox(element, imgs);
 </script>
